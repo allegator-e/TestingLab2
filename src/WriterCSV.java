@@ -23,7 +23,7 @@ public class WriterCSV {
 		printer.printTo("log5.csv", points);
 		points = fs.getPoints(fs.getLog10(), 0, Math.PI, 0.0001, 200);
 		printer.printTo("log10.csv", points);
-		points = fs.getPoints(fs.getOurFunc(), -Math.PI, Math.PI, 0.0001, 200);
+		points = fs.getPoints(fs.getOurFunc(), -10, 10, 0.0001, 200);
 		printer.printTo("our_func.csv", points);
     }
 }
